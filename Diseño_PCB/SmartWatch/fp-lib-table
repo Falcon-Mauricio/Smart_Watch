@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "TP4056")(type "KiCad")(uri "D:/APPS Mauri/KiCad Carpetas/Librerias_Finc/TP4056_F&S/TP4056.pretty")(options "")(descr ""))
+  (lib (name "tp4056_2")(type "KiCad")(uri "F:/FALC0N USB/Librerias-Kicad-master/Tp4056_2/tp4056_2.pretty")(options "")(descr ""))
+)
