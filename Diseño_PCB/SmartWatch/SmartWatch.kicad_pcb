@@ -452,7 +452,7 @@
     (property "ki_keywords" "connector")
     (path "/8b16f60f-00e2-45d1-96f3-1dd996944047")
     (attr through_hole)
-    (fp_text reference "J3" (at -0.49 -2.24 -180) (layer "F.SilkS")
+    (fp_text reference "J3" (at -0.49 -2.24) (layer "F.SilkS")
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d3bcd640-bab8-4a2f-9390-d98466ac5bbc)
     )
@@ -608,7 +608,7 @@
       (net 22 "/Rx") (pinfunction "Pin_3") (pintype "passive") (tstamp 80cae31b-71e2-4327-a633-0427f8fa36e1))
     (pad "4" thru_hole oval (at 0 7.62 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 23 "/Tx") (pinfunction "Pin_4") (pintype "passive") (tstamp b130ae4d-b9fc-43eb-8e1c-8dd0e1382149))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Horizontal.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Horizontal.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))

@@ -34,7 +34,7 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
+          "drill": 0.6,
           "height": 2.0,
           "width": 2.0
         },
@@ -407,7 +407,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "PCB_SmartWatch_SinCargador.kicad_pro",
+    "filename": "SmartWatch_Sin_Cargador.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -443,7 +443,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "SmartWatch_Sin_Cargador.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

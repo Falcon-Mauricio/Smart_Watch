@@ -14,6 +14,50 @@
   )
 
   (lib_symbols
+    (symbol "Connector:Conn_01x01_Pin" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Conn_01x01_Pin" (at 0 -2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_locked" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "ki_keywords" "connector" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Generic connector, single row, 01x01, script generated" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Conn_01x01_Pin_1_1"
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy 0.8636 0)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 0.8636 0.127) (end 0 -0.127)
+          (stroke (width 0.1524) (type default))
+          (fill (type outline))
+        )
+        (pin passive line (at 5.08 0 180) (length 3.81)
+          (name "Pin_1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Connector:Conn_01x02_Socket" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
@@ -1652,9 +1696,9 @@
   (no_connect (at 138.43 108.458) (uuid 8afba28c-a04e-40ff-9014-b6c2df8363cb))
   (no_connect (at 138.43 100.838) (uuid ff338f56-d0c6-4a0d-ab65-69a5af0e8728))
 
-  (wire (pts (xy 56.388 92.202) (xy 60.452 92.202))
+  (wire (pts (xy 56.642 94.996) (xy 60.706 94.996))
     (stroke (width 0) (type default))
-    (uuid 05e09077-2659-40d7-bb81-7c9acd4eb053)
+    (uuid 0bdc99a0-b96c-4bf9-bfce-f5664b050bc4)
   )
   (polyline (pts (xy 232.156 84.074) (xy 232.156 85.09))
     (stroke (width 0) (type default))
@@ -1808,6 +1852,10 @@
   (wire (pts (xy 242.57 92.456) (xy 246.38 92.456))
     (stroke (width 0) (type default))
     (uuid 60d96314-bb65-4b88-a44a-f0a9582e28f5)
+  )
+  (wire (pts (xy 80.01 94.996) (xy 80.01 96.52))
+    (stroke (width 0) (type default))
+    (uuid 62d0fb63-712f-40f5-8491-28d063c6c70b)
   )
   (wire (pts (xy 118.364 70.358) (xy 118.364 72.898))
     (stroke (width 0) (type default))
@@ -1968,6 +2016,10 @@
     (uuid bcad6021-c6f2-4cd8-8d75-a67377c64ef2)
   )
 
+  (wire (pts (xy 75.946 94.996) (xy 80.01 94.996))
+    (stroke (width 0) (type default))
+    (uuid bd24e21a-be2b-43de-93eb-c1084d3409c4)
+  )
   (wire (pts (xy 205.74 103.378) (xy 205.74 113.284))
     (stroke (width 0) (type default))
     (uuid be429ba6-54f6-44b8-84ec-4359926b2d26)
@@ -1987,10 +2039,6 @@
   (wire (pts (xy 205.74 103.378) (xy 168.91 103.378))
     (stroke (width 0) (type default))
     (uuid cf47c56a-a97f-44ba-b464-d344e4046257)
-  )
-  (wire (pts (xy 56.388 94.742) (xy 60.452 94.742))
-    (stroke (width 0) (type default))
-    (uuid d2f0e262-00e7-43e5-954f-fb90655863b8)
   )
   (wire (pts (xy 195.58 113.284) (xy 195.58 118.364))
     (stroke (width 0) (type default))
@@ -2047,10 +2095,6 @@
     (stroke (width 0) (type default))
     (uuid f12b50ba-621d-4ee4-978f-7ad0956e247e)
   )
-  (wire (pts (xy 60.452 94.742) (xy 60.452 96.266))
-    (stroke (width 0) (type default))
-    (uuid f224abfa-03f2-4cdf-9618-a10e432951ba)
-  )
   (wire (pts (xy 93.218 70.866) (xy 93.218 73.406))
     (stroke (width 0) (type default))
     (uuid f271d9c6-437e-4717-a8fe-848c95f97adc)
@@ -2097,6 +2141,10 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 17aa2357-49f6-4a86-aead-cc93dd7e3a96)
   )
+  (label "VBAT" (at 60.706 94.996 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 29c6b317-1090-4841-bdd8-c6bb4f95acc4)
+  )
   (label "SDA" (at 172.72 95.758 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 316c0049-b9df-43b0-a5a0-665c40c1b5b4)
@@ -2105,7 +2153,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 36830a69-2932-47fe-9918-447f34f96825)
   )
-  (label "Tx" (at 69.088 124.714 0) (fields_autoplaced)
+  (label "Tx" (at 69.088 127.254 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 60bdca55-7b59-4f36-8a17-333b4a11f931)
   )
@@ -2121,10 +2169,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d0d01fae-354b-409f-8ea0-fc2a470137da)
   )
-  (label "VBAT" (at 60.452 92.202 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid d14bfa2b-7819-4d82-a98f-6298f796cd5b)
-  )
   (label "VBAT" (at 43.434 83.058 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid dee9ec3e-8a3a-4aa5-8115-0350b4107dec)
@@ -2133,7 +2177,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid e9939287-a5a8-46d0-a622-fe8b8a18407f)
   )
-  (label "Rx" (at 69.088 127.254 0) (fields_autoplaced)
+  (label "Rx" (at 69.088 124.714 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f2e628d7-f1fa-4ea0-b417-79e89dcaa36d)
   )
@@ -2165,7 +2209,7 @@
           (reference "R6") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "R3") (unit 1)
         )
@@ -2195,7 +2239,7 @@
           (reference "#PWR08") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "#PWR08") (unit 1)
         )
@@ -2226,7 +2270,7 @@
           (reference "SW2") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "SW1") (unit 1)
         )
@@ -2257,7 +2301,7 @@
           (reference "C3") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "C3") (unit 1)
         )
@@ -2286,9 +2330,64 @@
           (reference "#G1") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "#G1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 80.01 96.52 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 159398c1-3d73-4e18-87d1-4e51e8ecb973)
+    (property "Reference" "#PWR02" (at 80.01 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 80.01 100.33 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 80.01 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 80.01 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 90307824-8436-4f8e-bc63-f5be01f2ab53))
+    (instances
+      (project "SmartWatch"
+        (path "/33c9733c-ce67-4179-8c61-800eba0b21c9"
+          (reference "#PWR02") (unit 1)
+        )
+      )
+      (project "SmartWatch_Sin_Cargador"
+        (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
+          (reference "#PWR012") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:Conn_01x01_Pin") (at 70.866 94.996 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 21e06865-630a-4dab-8799-a0dac7eeb68c)
+    (property "Reference" "J5" (at 71.882 90.424 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Input_Charger--" (at 74.422 92.202 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_Wire:SolderWire-0.1sqmm_1x01_D0.4mm_OD1mm" (at 70.866 94.996 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 70.866 94.996 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 04cbfc95-c84f-4dc7-a5b4-662151ad9a97))
+    (instances
+      (project "SmartWatch_Sin_Cargador"
+        (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
+          (reference "J5") (unit 1)
         )
       )
     )
@@ -2316,7 +2415,7 @@
           (reference "#PWR010") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "#PWR09") (unit 1)
         )
@@ -2346,7 +2445,7 @@
           (reference "#PWR014") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "#PWR03") (unit 1)
         )
@@ -2377,7 +2476,7 @@
           (reference "C2") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "C2") (unit 1)
         )
@@ -2410,7 +2509,7 @@
           (reference "SW6") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "SW5") (unit 1)
         )
@@ -2440,7 +2539,7 @@
           (reference "#PWR015") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "#PWR04") (unit 1)
         )
@@ -2491,7 +2590,7 @@
           (reference "U3") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "U1") (unit 1)
         )
@@ -2522,7 +2621,7 @@
           (reference "SW1") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "SW6") (unit 1)
         )
@@ -2553,7 +2652,7 @@
           (reference "C5") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "C1") (unit 1)
         )
@@ -2583,7 +2682,7 @@
           (reference "#PWR013") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "#PWR02") (unit 1)
         )
@@ -2614,7 +2713,7 @@
           (reference "R5") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "R2") (unit 1)
         )
@@ -2647,7 +2746,7 @@
           (reference "SW4") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "SW3") (unit 1)
         )
@@ -2679,7 +2778,7 @@
           (reference "U2") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "U2") (unit 1)
         )
@@ -2709,40 +2808,9 @@
           (reference "#PWR012") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "#PWR01") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Conn_01x02_Socket") (at 51.308 94.742 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 9663a594-0bf8-41b8-b22e-f2f9805130c6)
-    (property "Reference" "J1" (at 53.086 86.614 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Input_Charger" (at 53.086 89.154 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_Wire:SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm" (at 51.308 94.742 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 51.308 94.742 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9bce2e94-38bd-42dc-b12e-4f3fc67e1fb6))
-    (pin "2" (uuid b412571f-6d06-4626-bff3-a19507ff1ee1))
-    (instances
-      (project "SmartWatch"
-        (path "/33c9733c-ce67-4179-8c61-800eba0b21c9"
-          (reference "J1") (unit 1)
-        )
-      )
-      (project "PCB_SmartWatch_SinCargador"
-        (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
-          (reference "J3") (unit 1)
         )
       )
     )
@@ -2770,7 +2838,7 @@
           (reference "#PWR016") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "#PWR05") (unit 1)
         )
@@ -2800,7 +2868,7 @@
           (reference "#PWR02") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "#PWR010") (unit 1)
         )
@@ -2829,7 +2897,7 @@
           (reference "#G2") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "#G2") (unit 1)
         )
@@ -2860,7 +2928,7 @@
           (reference "R7") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "R4") (unit 1)
         )
@@ -2893,39 +2961,9 @@
           (reference "Display1") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "Display1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 60.452 96.266 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid c9c4a9f8-2199-4868-a27a-ede83f94cf91)
-    (property "Reference" "#PWR02" (at 60.452 102.616 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 60.452 100.076 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 60.452 96.266 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 60.452 96.266 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2e8f07cf-e52a-4db7-8eb7-bc99eb473e97))
-    (instances
-      (project "SmartWatch"
-        (path "/33c9733c-ce67-4179-8c61-800eba0b21c9"
-          (reference "#PWR02") (unit 1)
-        )
-      )
-      (project "PCB_SmartWatch_SinCargador"
-        (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
-          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -2956,7 +2994,7 @@
           (reference "SW5") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "SW4") (unit 1)
         )
@@ -2986,7 +3024,7 @@
           (reference "#PWR06") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "#PWR06") (unit 1)
         )
@@ -3017,7 +3055,7 @@
           (reference "J1") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "J2") (unit 1)
         )
@@ -3048,9 +3086,34 @@
           (reference "R4") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "R1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:Conn_01x01_Pin") (at 51.562 94.996 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid de91f113-63c9-43f1-a030-08848fd9e631)
+    (property "Reference" "J4" (at 52.578 90.424 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Input_Charger++" (at 55.118 92.202 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_Wire:SolderWire-0.1sqmm_1x01_D0.4mm_OD1mm" (at 51.562 94.996 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 51.562 94.996 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3886616e-0eac-4850-8be4-1279b7122ae5))
+    (instances
+      (project "SmartWatch_Sin_Cargador"
+        (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -3078,7 +3141,7 @@
           (reference "#PWR07") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "#PWR07") (unit 1)
         )
@@ -3109,7 +3172,7 @@
           (reference "SW3") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "SW2") (unit 1)
         )
@@ -3142,7 +3205,7 @@
           (reference "J3") (unit 1)
         )
       )
-      (project "PCB_SmartWatch_SinCargador"
+      (project "SmartWatch_Sin_Cargador"
         (path "/d6d508ff-828f-4c41-9057-6bb115a7a4be"
           (reference "J1") (unit 1)
         )
